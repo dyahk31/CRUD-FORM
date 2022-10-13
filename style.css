@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: #778899;
+    color: white;
+}
+
+
+.css-serial{
+    counter-reset: serial-number;
+}
+
+.css-serial td:first-child::before{
+    counter-increment: serial-number;
+    content: counter(serial-number);
+}
+
+.form-list{
+    margin-left: 500px;
+    margin-top: 100px;
+}
+
+input[type=text]{
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+input[type=submit]{
+    padding: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.student-table{
+    margin-left: 450px;
+    margin-top: 100px;
+}
+
+/* .list th{
+    padding: 15px;
+    text-align: left;
+} */
+
+.student-table table th, td{
+    border: 1px solid black;
+    text-align: left;
+    color: black;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td{
+    padding: 15px;
+}
+
+.editBtn {
+    background-color: #E49B0F;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.deleteBtn{
+    background-color: #C41E3A;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}

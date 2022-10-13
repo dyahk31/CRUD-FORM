@@ -1,0 +1,57 @@
+<!-- 
+    Nama : Putu Dyah Kencana Dewi
+    NIM : 2001020003
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JS CRUD PT.4 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>JS CRUD PT.4 </center></h1>
+	<hr>
+			<div class="form-list">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nama :</label><label class="validation-error hide" id="namaValidationError"></label>
+                        <br>
+                        <input type="text" name="nama" id="nama" placeholder="masukkan nama ...">
+                    </div>
+                    <div>
+                        <br>
+                        <label>NIM :</label>
+                        <br>
+                        <input type="text" name="nim" id="nim" placeholder="masukkan nim ...">
+                    </div>
+                    <div class="form-action-buttons">
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "student-table">
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="css-serial">
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
